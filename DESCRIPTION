@@ -1,0 +1,21 @@
+Package: mincountr
+Title: A simple point counter for mineral volume estimates
+Version: 0.0.0.9000
+Authors@R: 
+    person(given = "Soeren",
+           family = "Wilke",
+           role = c("aut", "cre"),
+           email = "s.wilke@gmx.de",
+           )
+Description: mincountr groups images from e.g. electron microprobes by brightness an then counts the number of pixels per group.
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 6.1.1
+Imports: 
+    magrittr,
+    dplyr,
+    ggplot2,
+    imager,
+    paletteer,
+    tibble
