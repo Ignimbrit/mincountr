@@ -32,7 +32,7 @@ myimage <- mcr_load_image(
 plot(myimage)
 ```
 
-![](README-load%20image-1.png)<!-- -->
+![](man/figures/load%20image-1.png)<!-- -->
 
 As you can see, the different levels of brightness in the image allows
 the observer to distinguish between several distinct phases. There is a
@@ -46,7 +46,7 @@ histogram) of the images brightness.
 mcr_inspect_phases(myimage)
 ```
 
-![](README-plot%20brightness-1.png)<!-- -->
+![](man/figures/plot%20brightness-1.png)<!-- -->
 
 Here we can see that the four phases we distinguished in the image above
 show up in the density distribution as distinct peaks of specific
@@ -65,7 +65,7 @@ mcr_inspect_phases(myimage) +
       )
 ```
 
-![](README-illustrate%20peakborders-1.png)<!-- -->
+![](man/figures/illustrate%20peakborders-1.png)<!-- -->
 
 Now in this example we just chose the borders of the peak by hand. This
 is probably the safest method of constraining your brightness-levels, as
@@ -109,7 +109,7 @@ mcr_inspect_assignement(
 )
 ```
 
-![](README-check%20assignement-1.png)<!-- -->
+![](man/figures/check%20assignement-1.png)<!-- -->
 
 As every pixel in the original image was now assigned to one of the 7
 levels shown in the picture above, we can go ahead and just count the
