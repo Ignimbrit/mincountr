@@ -3,7 +3,6 @@
 \docType{package}
 \name{mincountr}
 \alias{mincountr}
-\alias{mincountr-package}
 \title{mincountr}
 \description{
 simple point counting methods to estimate mineral volume shares in electron microscope images

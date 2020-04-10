@@ -104,7 +104,7 @@ mcr_inspect_assignement <-  function(x, lhs, rhs) {
     ) +
     ggplot2::geom_raster() +
     ggplot2::labs(fill = "Phase_ID") +
-    paletteer::scale_fill_paletteer_d(package = "ggsci", palette = "default_igv")
+    paletteer::scale_fill_paletteer_d("ggsci::default_igv")
 }
 
 #' Automatic peak detection
