@@ -67,10 +67,10 @@ print(myconstrains)
 
 The `mcr_autoconstrain` function automatically detects peaks and notes their position (`peakpos`) and then goes on and calculates their borders both on the left-hand-side (`x1`) and on the right hand side (`x2`). Under the hood, `mcr_autoconstrain` identifies turning points in the brightness-"spectra", cuts it into pieces, one piece per peak, and then loops over the single-peak spectra-pieces to calculate the half-height-width.
   
-  Now we have all the information we need to assign certain areas of our original image to distinct phases. The mincountr-package comes with a function that lets you inspect what this assignement looks like.
+  Now we have all the information we need to assign certain areas of our original image to distinct phases. The mincountr-package comes with a function that lets you inspect what this assignment looks like.
 
-```{r check assignement}
-mcr_inspect_assignement(
+```{r check assignment}
+mcr_inspect_assignment(
   myimage,
   lhs = myconstrains$x1,
   rhs = myconstrains$x2

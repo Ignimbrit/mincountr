@@ -44,6 +44,11 @@ histogram) of the images brightness.
 
 ``` r
 mcr_inspect_phases(myimage)
+#> Warning: `as.tibble()` is deprecated as of tibble 2.0.0.
+#> Please use `as_tibble()` instead.
+#> The signature and semantics have changed, see `?as_tibble`.
+#> This warning is displayed once every 8 hours.
+#> Call `lifecycle::last_warnings()` to see where this warning was generated.
 ```
 
 ![](man/figures/plot%20brightness-1.png)<!-- -->
@@ -99,17 +104,17 @@ half-height-width.
 
 Now we have all the information we need to assign certain areas of our
 original image to distinct phases. The mincountr-package comes with a
-function that lets you inspect what this assignement looks like.
+function that lets you inspect what this assignment looks like.
 
 ``` r
-mcr_inspect_assignement(
+mcr_inspect_assignment(
   myimage,
   lhs = myconstrains$x1,
   rhs = myconstrains$x2
 )
 ```
 
-![](man/figures/check%20assignement-1.png)<!-- -->
+![](man/figures/check%20assignment-1.png)<!-- -->
 
 As every pixel in the original image was now assigned to one of the 7
 levels shown in the picture above, we can go ahead and just count the

@@ -3,7 +3,7 @@
 export("%>%")
 export(mcr_autoconstrain)
 export(mcr_herd_minerals)
-export(mcr_inspect_assignement)
+export(mcr_inspect_assignment)
 export(mcr_inspect_phases)
 export(mcr_load_image)
 importFrom(magrittr,"%>%")

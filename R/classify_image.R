@@ -56,10 +56,10 @@ mcr_inspect_phases <- function(x){
 #' 
 #' # (Semi-)Automatic approach:
 #' mypeaks <- mcr_autoconstrain(myimage)
-#' mcr_inspect_assignement(myimage, mypeaks$x1, mypeaks$x2)
+#' mcr_inspect_assignment(myimage, mypeaks$x1, mypeaks$x2)
 #' 
-#' # Manual assignements of brightnessgrouplimits:
-#' mcr_inspect_assignement(
+#' # Manual assignments of brightnessgrouplimits:
+#' mcr_inspect_assignment(
 #' myimage,
 #' lhs = c(0, 0.3, 0.5, 0.92),
 #' rhs = c(0.05, 0.45, 0.65, 1)
@@ -67,7 +67,7 @@ mcr_inspect_phases <- function(x){
 #' 
 #' @export
 
-mcr_inspect_assignement <-  function(x, lhs, rhs) {
+mcr_inspect_assignment <-  function(x, lhs, rhs) {
   
   #Some input testing
   if(!all(is.numeric(c(lhs, rhs)))){
